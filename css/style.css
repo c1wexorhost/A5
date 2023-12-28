@@ -1,4 +1,4 @@
-/* Base */
+carousel-inner
 html {
   overflow-x: hidden; }
 
@@ -7,6 +7,19 @@ body {
   color: gray;
   font-weight: 300;
   font-size: 1.1rem; }
+
+
+  @media only screen and (max-width: 480px) {
+
+    html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  
+  }
 
 ::-moz-selection {
   background: #000;
@@ -187,7 +200,7 @@ h1, h2, h3, h4, h5,
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out; }
-  .play-single-big > span {
+  .play-single-b > span {
     font-size: 50px;
     position: absolute;
     top: 50%;
@@ -789,7 +802,7 @@ h1, h2, h3, h4, h5,
     .hero-slide .owl-nav .owl-prev,
     .hero-slide .owl-nav .owl-next {
       position: absolute;
-      top: 50%;
+      top: 0%;
       text-align: center;
       width: 70px;
       height: 70px;
@@ -1181,8 +1194,8 @@ h1, h2, h3, h4, h5,
   border-right: 1px solid #efefef; }
 
 .header-top > .container {
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 .header-top .quick-contact-icons .icon {
   margin-right: 10px;
@@ -1650,3 +1663,28 @@ h1, h2, h3, h4, h5,
   .testimony-39291 .text span {
     font-size: 14px;
     color: #ccc; }
+
+
+  .carousel-inner {
+    height:250px;
+    
+
+  }
+.carousel-item {
+  width: 100%;
+height: 100% !important;
+object-fit: cover;
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+}
