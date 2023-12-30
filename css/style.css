@@ -1728,3 +1728,27 @@ h1, h2, h3, h4, h5,
   text-decoration: none;
   color: black;
 }
+
+
+/* @media (min-width:320px) {
+  .route {
+      text-align: left;
+      position: fixed;
+  }
+
+  #boldhead {
+      text-align: left;
+  }
+}
+
+@media (min-width:481px) {
+  .route {
+    text-align: left;
+    font-size: 60px;
+    position: fixed;
+}
+
+  #boldhead {
+      text-align: left;
+  }
+} */
