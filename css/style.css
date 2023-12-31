@@ -1,4 +1,4 @@
-/* Base */
+carousel-inner
 html {
   overflow-x: hidden; }
 
@@ -7,6 +7,19 @@ body {
   color: gray;
   font-weight: 300;
   font-size: 1.1rem; }
+
+
+  @media only screen and (max-width: 480px) {
+
+    html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  
+  }
 
 ::-moz-selection {
   background: #000;
@@ -187,7 +200,7 @@ h1, h2, h3, h4, h5,
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out; }
-  .play-single-big > span {
+  .play-single-b > span {
     font-size: 50px;
     position: absolute;
     top: 50%;
@@ -786,10 +799,10 @@ h1, h2, h3, h4, h5,
     @media (max-width: 991.98px) {
       .hero-slide .owl-nav {
         display: none; } }
-    .hero-slide .owl-nav .owl-prev,
+    /* .hero-slide .owl-nav .owl-prev,
     .hero-slide .owl-nav .owl-next {
       position: absolute;
-      top: 50%;
+      top: 0%;
       text-align: center;
       width: 70px;
       height: 70px;
@@ -797,8 +810,10 @@ h1, h2, h3, h4, h5,
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      background: #fff; }
-      .hero-slide .owl-nav .owl-prev > span,
+      background: #fff; } */
+
+
+      /* .hero-slide .owl-nav .owl-prev > span,
       .hero-slide .owl-nav .owl-next > span {
         font-size: 1.7rem;
         position: absolute;
@@ -807,8 +822,11 @@ h1, h2, h3, h4, h5,
         color: #000;
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
-      .hero-slide .owl-nav .owl-prev:hover,
+        transform: translate(-50%, -50%); } */
+
+
+
+      /* .hero-slide .owl-nav .owl-prev:hover,
       .hero-slide .owl-nav .owl-next:hover {
         background: #1089ff; }
         .hero-slide .owl-nav .owl-prev:hover > span,
@@ -817,7 +835,9 @@ h1, h2, h3, h4, h5,
     .hero-slide .owl-nav .owl-prev {
       left: 10px; }
     .hero-slide .owl-nav .owl-next {
-      right: 10px; }
+      right: 10px; } */
+
+
   .hero-slide .owl-dots {
     position: absolute;
     bottom: 30px;
@@ -840,6 +860,10 @@ h1, h2, h3, h4, h5,
   .hero-slide:hover .owl-nav {
     opacity: 1;
     visibility: visible; }
+
+    .carousel-inner .hero-slide {
+      display: none;
+    }
 
 .owl-slide-3, .owl-slide {
   position: relative; }
@@ -1181,8 +1205,8 @@ h1, h2, h3, h4, h5,
   border-right: 1px solid #efefef; }
 
 .header-top > .container {
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 .header-top .quick-contact-icons .icon {
   margin-right: 10px;
@@ -1349,7 +1373,7 @@ h1, h2, h3, h4, h5,
     padding-bottom: 0;
     position: relative;
     overflow: hidden;
-    margin-bottom: 30px; }
+    margin-bottom: 15px; }
   .person img {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -1650,3 +1674,81 @@ h1, h2, h3, h4, h5,
   .testimony-39291 .text span {
     font-size: 14px;
     color: #ccc; }
+
+
+  .carousel-inner {
+    height:250px;
+    
+
+  }
+.carousel-item {
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+}
+
+
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.nm{
+  padding-bottom: 20px;
+  color: #000;
+}
+
+.social{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* @media (min-width:320px) {
+  .route {
+      text-align: left;
+      position: fixed;
+  }
+
+  #boldhead {
+      text-align: left;
+  }
+}
+
+@media (min-width:481px) {
+  .route {
+    text-align: left;
+    font-size: 60px;
+    position: fixed;
+}
+
+  #boldhead {
+      text-align: left;
+  }
+} */
