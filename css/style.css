@@ -2227,3 +2227,15 @@ h5,
   border-radius: 8px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+.map-wrapper{
+  /* max-width: 900px; */
+  border: 2px solid red;
+
+}
+
+.googlemap{
+  width: 100%;
+
+}
