@@ -51,10 +51,6 @@
   })(window,document,'script','dataLayer','GTM-TN5RPHKC');</script>
   <!-- End Google Tag Manager -->
 
-<!-- Event snippet for page view conversion conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-11467448022/b7u0CLPPtIcZENa9jdwq'});
-</script>
 
 
 <!-- Google tag (gtag.js) -->
@@ -79,29 +75,7 @@
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-<!-- Event snippet for yacht page view conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-11467448022/h716CKmHrIsZENa9jdwq'});
-</script>
-<!-- Event snippet for yacht purchase conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-  function gtag_report_conversion(whatsappLink) {
-    var callback = function () {
-      if (typeof(whatsappLink) != 'undefined') {
-        window.location = whatsappLink;
-      }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-11467448022/PIFjCN6ZoosZENa9jdwq',
-        'value': numericValue,
-        'currency': 'AED',
-        'transaction_id': iconShip,
-        'event_callback': callback
-    });
-    return false;
-  }
-  </script>
+
 
 
 </head>
@@ -1470,6 +1444,19 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   }
 </script>
 
+<script>
+  document.addEventListener('click', function(event) {
+    var text = event.target.innerText.trim()
+    if (text.indexOf('BOOK NOW') != -1) {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11467448022/AaGeCMPLko8ZENa9jdwq'
+      });
+    }
+  }, {
+    capture: true
+  });
+
+</script>
 
 </body>
 
