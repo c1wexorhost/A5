@@ -30,5 +30,5 @@ $(document).ready(function () {
     }
 
     showNewsletterPopup();
-  }, 2000); // 5000 milliseconds = 5 seconds
+  }, 5000); // 5000 milliseconds = 5 seconds
 });
