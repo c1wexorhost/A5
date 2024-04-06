@@ -56,9 +56,9 @@ h5,
   border-width: 2px;
 }
 
-.text-serif {
+/* .text-serif {
   font-family: "Dancing Script", sans-serif;
-}
+} */
 
 .text-black {
   color: #000 !important;
@@ -2228,14 +2228,11 @@ h5,
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-.map-wrapper{
+.map-wrapper {
   /* max-width: 900px; */
   border: 2px solid red;
-
 }
 
-.googlemap{
+.googlemap {
   width: 100%;
-
 }
