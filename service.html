@@ -1549,6 +1549,8 @@
             </p>
             <form action="#" id="contactForm" name="contactForm">
               <div class="mb-3">
+                <input placeholder="Enter Name" type="text" name="name" id="name"
+                class="form-control form-control-lg">
                 <input placeholder="Enter Email" type="text" name="email" id="email"
                   class="form-control form-control-lg">
                 <input placeholder="Enter Mobile Number" type="text" name="tel" id="tel"
@@ -1610,13 +1612,15 @@
     event.preventDefault(); // Prevent form submission
 
     // Get form values
+    var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var tel = document.getElementById("tel").value;
-    var client_id = "wc_PtOOTFabQTEBrbf66aBw"; // Replace with your user ID
+    var client_id = "wexorai"; // Replace with your user ID
     // Construct message
     var fullMessage = `Tel: ${tel}`;
     var payload = {
       client_id: client_id,
+      name: name,
       email: email,
       tel: tel,
       message: "Your message here" // Add your message here
@@ -1634,8 +1638,9 @@
     })
       .then(function (response) {
         if (response.ok) {
-          alert("Message sent successfully!");
+          alert("Offer message sent successfully! Our team will connect with you shortly.");
           // Reset form fields
+          document.getElementById("name").value = "";
           document.getElementById("email").value = "";
           document.getElementById("tel").value = "";
         } else {
