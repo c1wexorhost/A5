@@ -31,4 +31,59 @@ $(document).ready(function () {
 
     showNewsletterPopup();
   }, 5000); // 5000 milliseconds = 5 seconds
+
+  // Form submission handling
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form values
+    var name = document.getElementById("name").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var tel = document.getElementById("tel").value.trim();
+    var client_id = "wexorai"; // Replace with your user ID
+
+    // Check if name, email, and tel fields are not empty
+    if (name === "" || email === "" || tel === "") {
+      alert("Name, Email, and Mobile Number are required fields.");
+      return; // Exit the function if any of the required fields are empty
+    }
+
+    // Duplicate tel value into message
+    var message = `Tel: ${tel}\n\n Message:`;
+
+    // Send JSON request using Fetch API
+    var payload = {
+      client_id: client_id,
+      name: name,
+      email: email,
+      tel: tel,
+      message: message, // Only tel is appended to the message
+    };
+
+    fetch("https://chatbot.wexorai.com/clientmessagef3", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+      redirect: "follow",
+    })
+      .then(function (response) {
+        if (response.ok) {
+          alert("Offer message sent successfully! Our team will connect with you shortly.");
+          // Reset form fields except name, email, and tel
+          document.getElementById("subject").value = "";
+          document.getElementById("message").value = "";
+        } else {
+          throw new Error("Failed to send message.");
+        }
+      })
+      .catch(function (error) {
+        alert("An error occurred: " + error.message);
+      });
+
+    // Reset form fields except name, email, and tel
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+  });
 });
