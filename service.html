@@ -1485,29 +1485,19 @@
     // var iconPeople = $card.find('.cm').text();
     var iconMoney = $card.find('.icon-money').text();
     var whatsappLink = $(clickedElement).attr('href');
-
     // Display the values (you can do whatever you want with these values)
     console.log('Icon Ship:', iconShip);
     // console.log('Icon People:', iconPeople);
     console.log('Icon Money:', iconMoney);
     console.log('WhatsApp Link:', whatsappLink);
-
     gtag_report_conversion(whatsappLink)
-
-
-
     var moneyText = $card.find('.icon-money').text();
-
     // Extract the numeric value using regular expression
     var numericValue = parseInt(moneyText.match(/\d+/)[0]);
-
     // Display the numeric value
-
     // console.log('Numeric Value:', numericValue);
-
   }
 </script>
-
 <script>
   document.addEventListener('click', function (event) {
     var text = event.target.innerText.trim()
