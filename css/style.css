@@ -1,3 +1,16 @@
+#offer_tag {
+  position: fixed; /* Set position to fixed */
+  top: 20%; /* Adjust this value to vertically center the image */
+  right: 1px; /* Adjust this value to set distance from the right side */
+  transform: translateY(-50%); /* Vertically center the image */
+  z-index: 100;
+}
+
+#offer_tag img {
+  width: 100px; /* Adjust the width of the image as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
 carousel-inner html {
   overflow-x: hidden;
 }
