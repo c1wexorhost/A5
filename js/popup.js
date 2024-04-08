@@ -101,6 +101,7 @@ $(document).ready(function () {
             alert(
               "Offer message sent successfully! Our team will connect with you shortly."
             );
+            gtag('event', 'conversion', { 'send_to': 'AW-11467448022/8iw9CM7iv6QZENa9jdwq' });
             // Reset form fields except name, email, and tel
             document.getElementById("subject").value = "";
             document.getElementById("message").value = "";
