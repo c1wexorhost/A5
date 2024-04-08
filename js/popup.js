@@ -68,7 +68,7 @@ $(document).ready(function () {
       var name = document.getElementById("name").value.trim();
       var email = document.getElementById("email").value.trim();
       var tel = document.getElementById("tel").value.trim();
-      var client_id = "wc_PtOOTFabQTEBrbf66aBw"; // Replace with your user ID
+      var client_id = "wexorai"; // Replace with your user ID
 
       // Check if name, email, and tel fields are not empty
       if (name === "" || email === "" || tel === "") {
