@@ -32,7 +32,7 @@ $(document).ready(function () {
       mpInstance.close();
     }
     showPopup("#newsletter-popup-form");
-  }, 3000);
+  }, 10000);
 
   // Event listener for clicking on the offer tag
   $(document).on("click", "#offer_tag", function (e) {
