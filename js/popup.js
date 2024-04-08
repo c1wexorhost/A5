@@ -53,7 +53,7 @@ $(document).ready(function () {
         alert("Name, Email, and Mobile Number are required fields.");
         return;
       }
-      var message = `Tel: ${tel}\n\n Message:`;
+      var message = `Tel: ${tel}\n\n Message: A message from your website visitor`;
       var payload = {
         client_id: client_id,
         name: name,
@@ -101,7 +101,7 @@ $(document).ready(function () {
         alert("Name, Email, and Mobile Number are required fields.");
         return;
       }
-      var message = `Tel: ${tel}\n\n Message:`;
+      var message = `Tel: ${tel}\n\n Message: A message from your website visitor`;
       var payload = {
         client_id: client_id,
         name: name,
