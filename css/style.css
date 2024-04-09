@@ -1,4 +1,4 @@
-/* #offer_tag {
+#offer_tag {
   position: fixed; 
   top: 20%; 
   right: 1px;
@@ -9,7 +9,7 @@
 #offer_tag img {
   width: 100px;
   height: auto; 
-} */
+}
 
 carousel-inner html {
   overflow-x: hidden;
