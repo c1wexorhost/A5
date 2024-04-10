@@ -10,6 +10,12 @@
   width: 100px;
   height: auto; 
 } */
+@media screen and (min-width: 767px) {
+  /* Styles for mobile view */
+  .gif-image {
+    padding-top: 10rem; /* Allow the height to adjust automatically */
+  }
+}
 
 carousel-inner html {
   overflow-x: hidden;
