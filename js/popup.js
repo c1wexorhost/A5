@@ -5,6 +5,7 @@ $(document).ready(function () {
   var emailInput = document.getElementById("email");
   var telInput = document.getElementById("tel");
 
+  var autoPopupTimer; // Variable to store the timer for the auto popup
   // Function to show a popup
   function showPopup(popupId) {
     $.magnificPopup.open({
@@ -26,7 +27,7 @@ $(document).ready(function () {
     });
   }
   // Show newsletter popup after 5 seconds
-  setTimeout(function () {
+  autoPopupTimer = setTimeout(function () {
     var mpInstance = $.magnificPopup.instance;
     if (mpInstance.isOpen) {
       mpInstance.close();
@@ -37,9 +38,10 @@ $(document).ready(function () {
   // Event listener for clicking on the offer tag
   $(document).on("click", "#offer_tag", function (e) {
     e.preventDefault(); // Prevent the default action of the link
+    clearTimeout(autoPopupTimer); // Clear the auto popup timer
     showPopup("#offer-popup"); // Show the offer popup
   });
-  // Form submission handling
+  // Form submission handling for the auto popup
   document
     .getElementById("contactForm")
     .addEventListener("submit", function (event) {
