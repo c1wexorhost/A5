@@ -50,7 +50,7 @@ $(document).ready(function () {
       var name = nameInput.value.trim();
       var email = emailInput.value.trim();
       var tel = telInput.value.trim();
-      var client_id = "wexorai"; // Replace with your user ID
+      var client_id = "wc_PtOOTFabQTEBrbf66aBw"; // Replace with your user ID
       if (name === "" || email === "" || tel === "") {
         alert("Name, Email, and Mobile Number are required fields.");
         return;
@@ -76,6 +76,7 @@ $(document).ready(function () {
             alert(
               "Offer message sent successfully! Our team will connect with you shortly."
             );
+            $.magnificPopup.close();
             // Reset form fields except name, email, and tel
             nameInput.value = "";
             emailInput.value = "";
@@ -97,7 +98,7 @@ $(document).ready(function () {
       var name = document.getElementById("nameButton").value.trim();
       var email = document.getElementById("emailButton").value.trim();
       var tel = document.getElementById("telButton").value.trim();
-      var client_id = "wexorai"; // Replace with your user ID
+      var client_id = "wc_PtOOTFabQTEBrbf66aBw"; // Replace with your user ID
 
       if (name === "" || email === "" || tel === "") {
         alert("Name, Email, and Mobile Number are required fields.");
@@ -124,6 +125,7 @@ $(document).ready(function () {
             alert(
               "Offer message sent successfully! Our team will connect with you shortly."
             );
+            $.magnificPopup.close();
             // Reset form fields except name, email, and tel
             document.getElementById("nameButton").value = "";
             document.getElementById("emailButton").value = "";
