@@ -16,11 +16,13 @@ $(document).ready(function () {
       removalDelay: 350,
       callbacks: {
         open: function () {
-          $("body").css("overflow-x", "visible");
+          $("body").css("overflow", "hidden"); // Prevent background scrolling
+          $("body").css("position", "fixed"); // Fix the body position
           $(".sticky-header.fixed").css("padding-right", "1.7rem");
         },
         close: function () {
-          $("body").css("overflow-x", "hidden");
+          $("body").css("overflow", "auto"); // Restore background scrolling
+          $("body").css("position", "static"); // Restore body position
           $(".sticky-header.fixed").css("padding-right", "0");
         },
       },
